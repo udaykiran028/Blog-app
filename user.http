@@ -1,0 +1,33 @@
+### User api requests
+### User creation
+POST http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"udaykiran",
+    "password":"uday",
+    "email":"uday@gmail.com"
+}
+
+### User login
+POST http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"udaykiran",
+    "password":"uday"
+}
+
+### reading all articles
+GET http://localhost:4000/user-api/articles
+
+### write a comment
+POST http://localhost:4000/user-api/comment/1709051201
+Content-Type: application/json
+
+{
+    "username":"udaykiran",
+    "comment":"Amazing content"
+}
